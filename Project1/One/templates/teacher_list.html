@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>stu_list</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p> 教师列表</p>
+    <ul>
+        {% for value in teacher %}
+        <li>{{ value.t_name }}</li>
+        {% endfor %}
+  
+    </ul> 
+</body>
+</html>

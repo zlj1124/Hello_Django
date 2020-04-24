@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>stu_list</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p> 所在班级</p>
+    <ul>
+ 
+    <!-- <li><a href="#">{{ grade.g_name}}</a> </li> -->
+    <li><a href="{% url 'teacher'  grade.id %}">{{ grade.g_name}}</a> </li>
+      
+    </ul>   
+</body>
+</html>

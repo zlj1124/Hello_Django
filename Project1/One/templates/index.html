@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>stu_list</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p> 学生列表</p>
+    <ul>
+        {% for value in stu %}
+           
+        <li><a href="{% url 'grade'  value.id %}">{{ value.s_name}}</a> </li>
+        {% endfor %}
+    </ul> 
+</body>
+</html>
